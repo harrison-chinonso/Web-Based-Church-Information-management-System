@@ -1,0 +1,815 @@
+body{
+    background-color: white ;
+    width:100%;
+}
+body#workbody{
+    background-color: white;
+    width:100%;
+}
+section#pixs{ 
+    border-top: 0px;
+    min-height: 400px;
+    border-radius: 1px;
+    width: 100%;
+    margin:10px 0px;
+    background-image:url(../img/bg7.jpg);
+    animation-name: ani;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 8px 8px 8px 8px rgb(44, 44, 168);
+}
+@keyframes ani{
+from{background-position: 0 0}
+to{background-position: 0px;}
+}
+section#pixs div.fade h1{
+    font-size: 30px;
+    font-family: serif ;
+    color:  rgb(136, 34, 34);
+    margin: 10px 15px 100px 50px;
+}
+section#pixs div.fade a#aslide{
+    font-size: 30px;
+    font-family: serif ;
+    color:  rgb(136, 34, 34);
+    margin: 70px 0px 20px 0px;
+    text-decoration: none;
+    border: solid 1px rgb(136, 34, 34); 
+}
+section#pixs div.fade a{
+    font-size: 30px;
+    font-family: serif ;
+    color:  rgb(73, 71, 71);
+    margin: 70px 1px 20px 950px;
+    text-decoration: none;
+    border: solid 1px rgb(136, 34, 34); 
+}
+section#pix div.fade a:hover{
+    background: wheat;
+}
+* {box-sizing: border-box;}
+/* Slideshow container */
+.slide-container {
+  max-width: 100%;
+  position: relative;
+  margin: 0px; 
+}
+/* Number text (1/3 etc) */
+div.fade .numbertext p {
+    color: #f0eaea;
+    font-size: 10px;
+    padding: 10px;
+    position: relative;
+    margin: 10px 15px 0px 50px;
+    top: 0;
+  }
+  /* The dots/bullets/indicators */
+  section#pixsspan.dot {
+    height: 15px;
+    width: 15px;
+    margin: 90px 3px 10px 3px ;
+    padding: 5px;
+    background-color: rgb(136, 34, 34);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Fading animation */
+  .fade {
+    margin: 10px 0px 0px 50px;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+div.container{
+    width: 100% !important;
+}
+div.card img{
+    height: 250px;
+}
+.slider .slides li {
+    opacity: 0;
+    position: absolute;
+    top: 1;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+section#service ul.slides li{
+    margin: 0px;
+}
+section#service ul.slides img{
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+header#home nav{
+    border-bottom : 3px solid rgb(126, 123, 123);
+    margin: 0px;
+}
+header#home nav div.container a.brand-logo{
+    color:white;
+    font-size: 24px;
+    /* margin-left: 0px;  */
+}
+header#home nav div.container span{
+    color:rgb(150, 150, 146) !important; 
+    font-size:24px; 
+    font-weight: bolder;
+}
+section#service{
+    margin-bottom: 0px;
+    border-bottom : 3px solid rgb(92, 90, 90);
+}
+section#aboutus img{
+    width: 100%;
+    margin-top: 5px;
+    height: 100%;
+}
+section#aboutus{
+    margin-top: 0px;
+}
+section#aboutus a.aboutaction{
+ border: 2px solid rgb(137, 137, 226);
+ padding: 8px;
+ color: rgb(247, 243, 243);
+ margin: 12px 5px 5px 60px;
+ float: right;
+ border-radius: 10px;
+ font-family: cursive;
+ background: rgb(44, 44, 168);
+ 
+}
+section#aboutus a.readabout{
+    border: 2px solid rgb(137, 137, 226);
+    padding: 8px;
+    color: rgb(247, 243, 243);
+    margin: 12px 5px 5px 10px;
+    float: left;
+    border-radius: 10px;
+    font-family: cursive;
+    background: rgb(44, 44, 168);
+   
+}
+div.worker a.all{
+    border: 2px solid rgb(137, 137, 226);
+    padding: 8px;
+    color: rgb(247, 243, 243);
+    margin: 0px;
+    border-radius: 10px;
+    font-family: cursive;
+    background: rgb(33, 33, 34);
+   
+}
+section#financial p.myfont
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+section#financial
+{
+    margin-top: 0px;
+    margin-bottom: 2px;
+    padding-top: 0px;
+}
+section#financial p#acct
+{
+    font-size: 20px;
+    font-weight: bolder;
+}
+section#financial  p#cont
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(136, 34, 34);
+}
+section#services p.myfont
+{
+    font-size: 30px;
+    position: relative;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+section#services , section#aboutus
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+section#error
+{
+    margin: 0px;
+    padding: 0px;
+}
+section#services p#acct
+{
+    font-size: 20px;
+    color: rgb(105, 102, 102);
+}
+section#gallery1 h4.head
+{
+    font-size: 35px;
+    animation-name: myani;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes myani{
+    0% {color:red; left: 10px;}
+    30% {color:rgb(53, 8, 8); left: 40px;}
+    50% {color:rgb(30, 96, 238); left: 70px;}
+    100% {color:rgb(12, 12, 12); left: 10px;}
+}
+section#gallery img{
+  height: 300px;
+  width: 100%;
+}
+.portfolio-menu{
+    text-align: center;
+
+}
+.portfolio-menu ul li{
+    display: inline-block;   
+}
+footer.page-footer div.contact {
+    margin: 0px;
+    /* flex: 1 0 auto;  */
+    padding: 0px;   
+}
+footer.page-footer li{
+    display: inline;
+    padding: 8px;
+}
+footer.page-footer div.container {
+    margin-top: 0px;
+    /* flex: 1 0 auto; */
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+footer#contact {
+    display: flex;
+    min-height: 10vh;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+
+  /* LOGIN MODAL */
+
+  input[type=text], input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: rgb(22, 20, 20);
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 12px 0 6px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 10%;
+    border-radius: 20%;
+}
+
+div.login form.animate div.container {
+    padding: 5px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.login {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 150%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 30px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+button.submit{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button.submit:hover {
+    opacity: 0.8;
+}
+/* Modal Content/Box */
+.login-content {
+    background-color: #fefefe;
+    margin: 0% auto 0% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+    min-height: 36%;
+}
+
+/* The Close Button (x) */
+div.login span.close {
+    position: absolute;
+    right: 20px;
+    top: 0;
+     color: #000; 
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* SIGN UP MODAL */
+* {box-sizing: border-box}
+/* Full-width input fields */
+ .signup input[type=text], .signup input[type=password], input[type=file]{
+  width: 100%;
+  padding: 8px;
+  margin: 1px 0 10px 0;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+  background: #f1f1f1;
+  color: rgb(22, 20, 20);
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  color: rgb(22, 20, 20);
+}
+
+/* Set a style for all buttons */
+button.signup {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button.signup:hover {
+  opacity:1;
+}
+/* Add padding to container elements */
+div.signup div.container {
+  padding: 8px;
+  margin: 0px;
+}
+/* The Modal (background) */
+div.signup{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 24.2%;
+  top: 0;
+  width: 60%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding: 0px;
+  margin-top: 30px;
+}
+
+/* Modal Content/Box */
+.signup-content {
+  background-color: #fefefe;
+  margin: 1% auto 4% auto; /* 1% from the top, 4% from the bottom and centered */
+  width: 100%; /* Could be more or less, depending on screen size */
+  padding-right: 30px;
+  padding-top: 5px;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #bbb9b9;
+  margin: 0px;
+}
+
+/* The Close Button (x) */
+div.signup form.signup-content span.close {
+  position: relative;
+  left: 100%;
+  top: 0px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #3d0505;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  float: left;
+}
+div.signup form.signup-content h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+   }
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+div#persondetail{
+     width:30%; 
+     max-height: 90% !important;
+     overflow: auto;
+     left: 10%;
+}
+div#persondetail h1{
+    font-size:20px;
+    font-weight: bold;
+}
+div#person_details{
+    font-size: 15px;
+    margin-top: 5px;
+}
+div#modaldetails h4{
+    font-size:20px;
+    font-weight: bold;
+}
+div#modaldetails{
+    display: none;
+    position: fixed;
+    left: 35%;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    max-height: 70%;
+    width: 30%;
+    margin: 30px auto;
+    overflow-y: auto;
+    border-radius: 2px;
+    will-change: top, opacity;
+}
+@media only screen and (max-width: 992px) {
+    #modaldetails {
+      width: 80%;
+    }
+  }
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+    section.usercontainer div.profile img{
+        width: 50%;
+    }
+    header#home nav div.container a.brand-logo{
+        font-size: 11px;
+    } 
+    header#home nav div.container span{
+        font-size: 15px; 
+        font-weight: bolder;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    header#home nav div.container{
+        margin: 0px;
+    }
+    div#persondetail{
+        width:100%; 
+        height:90%;
+   }
+   div#persondetail h4{
+       font-weight: light;
+   }F
+   div#person_details{
+       font-size: 10px;
+   }
+   div#modaldetails{
+    width:50%; 
+    height:90%;
+   }
+   div#modaldetails h1{
+       font-size: 10px;
+}
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 900px) {
+  section.usercontainer div.profile img{
+  width: 40%;
+}
+header#home nav div.container a.brand-logo{
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 0px;
+    margin-left: 0px;
+} 
+header#home nav div.container a.brand-logo span{
+    font-size:3px; 
+    margin-right: 0px;
+    margin-left: 0px;
+}
+div#persondetail{
+    width:90%; 
+    max-height: 100% !important;
+}
+div#persondetail h4{
+   font-weight: light;
+}
+div#person_details{
+   font-size: 15px;
+}
+div#modaldetails{
+width:90%; 
+height:100%;
+}
+div#modaldetails h1{
+   font-size: 10px;
+}
+}
+
+/* User Section begin */
+section.usercontainer{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+section.usercontainer div.row{
+    width: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+section.usercontainer div.card-panel{
+    width: 100%;
+    margin-bottom: 0px;
+    min-height: 610px;
+    padding: 1px; 
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    margin-top: 5px;
+}
+
+section.usercontainer div.mainwalk{
+    width: 100%;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    min-height: 610px;
+    box-sizing: border-box;   
+    background-image: url(../img/p.jpg);
+    background-position: center;
+    background-size: cover; 
+    /* opacity: 0.5;
+    filter: alpha(opacity(50)); */
+}
+section.usercontainer div.workarea{
+    margin:0px;
+    padding:0px;
+}
+section.usercontainer div.mainwork{
+    width: 100%;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    min-height: 610px;
+    box-sizing: border-box; 
+}  
+section.usercontainer div#profilepage div.card{
+   width: 100%;
+   margin-left: 0.1rem !important;
+   margin-right: 0.1rem !important;
+   margin-top: 5px;
+   margin-bottom: 0px;
+   padding: 1px;
+   min-height: 610px;  
+}
+section.usercontainer div.card div.card-content{
+ padding: 0px;
+ margin: 0px;
+}
+section.usercontainer div.card div.card-content p#loggedin_user{
+    font-family: cursive;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(66, 4, 4);
+}
+section.usercontainer ul.subworkmenu li> a{
+    font-size: 15px;;
+   }
+/* USER MENU */
+
+.work_menu li.active {
+    background-color: rgba(0, 0, 0, 0.05);
+}  
+  .work_menu li > a {
+    color: rgba(82, 80, 80, 0.87);
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    height: 42px;
+    line-height: 45px;
+    padding: 0px 5px 0px 25px;
+    margin: 4px 0;
+  }
+  .work_menu li > div.divider {
+    padding: 0px;
+    margin: 8px 0;
+    line-height: 70px;
+  }
+  .work_menu li > a > span {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1px 8px 1px 8px;
+  }
+  /* New Registrations */
+  div.new_register{
+    display: block; /* Hidden by default */
+    /* z-index: 1; Sit on top */
+    /* left: 25%; */
+    top: 0;
+    bottom: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #f1f2f5;
+    padding: 0px;
+    margin: 0px;
+  }
+  button.new_register {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    margin: 6px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 20px;
+  }
+  button.all {
+    background-color: rgb(240, 240, 245);
+    color: rgb(34, 31, 31);
+    padding: 7px;
+    margin: 2px 2px;
+    border: 2px solid rgb(169, 168, 172);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  button.new_register:hover {
+    opacity:1;
+  }
+  button.all:hover {
+    background-color: rgb(9, 9, 236);
+    color: rgb(34, 31, 31);
+  }
+  /* Add padding to container elements */
+  div.new_register div.report {
+    padding: 5px;
+    margin: 0px;
+    width: 100%;
+  }
+  div.new_register div.report div.row div.col{
+    margin: 0px;
+    padding: 7px 8px 7px 2px;
+  }
+  div.new_register div.report div.row{
+    margin: 0px;
+    padding: 0px;
+  }
+  div.new_register div.container {
+    padding: 5px;
+    margin: 0px;
+  }
+  div.new_register div.container div.row div.col{
+    margin: 0px;
+    padding: 0px 10px 0px 5px;
+  }
+  div.new_register div.container div.row{
+    margin: 0px;
+    padding: 0px;
+  }
+  /* Modal Content/Box */
+  div.new_registe form.new_register-content {
+    margin: 0px; /* 0% from the top, 0% from the bottom and centered */
+    width: 100%; /* Could be more or less, depending on screen size */
+    padding: 0px;
+  }
+  
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid #bbb9b9;
+    margin: 0px;
+  }
+ div.new_register form.new_register-content h1#newreg{
+      margin: 0px 0px 5px 20px;
+      font-size: 30px;
+    }
+ div.new_register form.new_register-content p#membernote{
+        margin: 1px 0px 0px 0px;
+        font-size:15px;
+    }
+/*About Us image */
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    }
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+    }
+.imagediv:hover .image {
+    opacity: 0.3;
+    }
+.imagediv:hover .middle {
+    opacity: 1;
+    }
+.text {
+    background-color: rgb(96, 99, 96);
+    color: white;
+    font-size: 14px;
+    padding: 5px 5px;
+    }

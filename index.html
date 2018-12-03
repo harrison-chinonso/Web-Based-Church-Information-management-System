@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Beuhier</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    </head>
+<body>
+    
+  <!-- Navigation starts here -->
+  <header id="home" class="navbar-fixed scrollspy">
+    <nav >
+      <div class="nav-wrapper blue darken-4">
+        <div class="container">
+          <a href="#" class="brand-logo">Dominion City <span style="color:rgb(150, 150, 146); font-size:24px; font-weight: bolder; ">Okota.</span></a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger" style="font-size: 25px;">&#9776;</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#gallery">Our Gallery</a></li>
+            <li><a href="#login" onclick="document.getElementById('login').style.display='block'" style="width:auto;" >Login</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#service">Our services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    </header>
+<!-- Mobile Navigation -->
+          <ul id="mobile-nav" class="sidenav">
+                <li>
+                <div class="user-view">
+                <div class="background">
+                  <img src="img/dc-logo big.png">
+                </div>
+                <a href="#user"><img class="circle" src="img/images.jpg"></a>
+                <a href="#name"><span class="black-text name">Beuhier Harry</span></a>
+                <a href="#email"><span class="black-text email">shianett@gmail.com</span></a>
+                </div>
+                </li>
+              <li><div class="divider  lighten-1"></div></li>
+              <li><a href="#home"><i class=" fa fa-home fa-2x"></i>Home</a></li>
+              <li><div class="divider  lighten-1"></div></li>
+              <li><a href="#gallery"><i class=" fa fa-camera fa-2x"></i>Our Gallery</a></li>
+              <li><div class="divider  lighten-1"></div></li>
+              <li><a href="#login" onclick="document.getElementById('login').style.display='block'" style="width:auto;" ><i class=" fa fa-user fa-2x"></i>Login</a></li>
+              <li><div class="divider  lighten-1"></div></li>
+              <li><a href="#aboutus"><i class=" fa fa-group fa-2x"></i>About Us</a></li>
+              <li><div class="divider  lighten-1"></div></li>
+              <li><a href="#service"><i class=" fa fa-folder fa-2x"></i>Our services</a></li>
+              <li><div class="divider  lighten-1"></div></li>
+              <li><a href="#contact"><i class=" fa fa-envelope fa-2x"></i>Contact Us</a></li>
+              <li><div class="divider  lighten-1"></div></li> 
+          </ul>                
+ <!-- slider here -->
+   <section id="service" class="scrollspy responsive-img">
+        <div class="slider">
+                <ul class="slides">
+                  <li>
+                    <img src="img/dc-logo big.png" >
+                    <div class="caption center-align">
+                      <h3>Enjoy our special services</h3>
+                      <h5 class="light gray-text text-lighten-3">Because the Lord is your Shepard</h5>
+                      <a href="#" class="btn gray darken-3 pulse ">Book Now</a>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img/dc logo.jpg " class="center-align cover">
+                    <div class="caption left-align">
+                      <h3>Greener Pasture</h3>
+                      <h5 class="light gray-text text-lighten-3">Beside the still waters</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img/bg2.jpg"  class="center-align cover">
+                    <div class="caption right-align">
+                    </div>
+                  </li>
+                  <li>
+                    <img src="img/bg1.jpg">
+                    <div class="caption center-align">
+                    </div>
+                  </li>
+                </ul>
+              </div>      
+  </section>
+  <!-- Login begins -->
+  <div id="login" class="login">
+  
+        <form class="login-content animate" action="../action_page.htm">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img/avatar2.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button class="submit" type="submit">Login</button>
+            <label>
+            <input type="checkbox" class="filled-in"  name="remember"><span>Remember me</span> 
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button id="register" type="button" onclick="document.getElementById('signup').style.display='block', document.getElementById('login').style.display='none'"><i class=" fa fa-plus fa-2x"></i><span>Register</span></button>
+            <span class="psw">Forgot <a href="tryit_53.htm#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      <!-- Register begins -->
+<!-- The Modal (contains the Sign Up form) -->
+<div id="signup" class="signup">
+       
+        <form class="signup-content" action="/action_page.php">
+            <div class="container">
+            <span onclick="document.getElementById('signup').style.display='none',document.getElementById('login').style.display='block'" class="close" title="Close Modal">&times;</span>
+            <h1>New User</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <input type="text" placeholder="Enter Email" name="email" required>
+            
+            <input type="text" placeholder="Enter Firstname" name="fname" required>
+            
+            <input type="text" placeholder="Enter Lastname" name="lname" required>
+            <div class="input-field col s12">
+            <select class="browser-default" >
+              <option value="" disabled selected>Select Role</option>
+              <option value="1">Pastor</option>
+              <option value="2">Area Cordinator</option>
+              <option value="3">Cell Leader</option>
+              <option value="4">Head Of Department</option>
+              <option value="5">Worker</option>
+              <option value="6">Member</option> 
+            </select>
+            </div>
+            <div class="input-field col s12">
+                <select class="browser-default" >
+                  <option value="" disabled selected>Select Area</option>
+                  <option value="1">Ago 1</option>
+                  <option value="2">Ago 2</option>
+                  <option value="3">Ago 3</option>
+                  <option value="4">Okota/Isolo</option>
+                  <option value="5">Ijesha</option>
+                  <option value="6">Ilasa</option> 
+                </select>
+                </div>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+            <label>
+              <input type="checkbox" class="filled-in" name="remember" style="margin-bottom:15px"> <span> Remember me</span>
+            </label>
+      
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            <button type="submit" class="signup">Sign Up</button>
+            
+          </div>
+        </form>
+      </div>
+  </section>
+  <!-- About Us -->
+<section id="aboutus" class="scrollspy card-panel">
+    <div class="container">
+      <div class="row">
+        <div class="col m4 wow slideInLeft" data-wow-delay: 1s; >
+          <img src="img/pee.jpg" class="responsive-img materialboxed" alt="">
+        </div>
+        <div class="col m4">
+          <h4>Our Vision and Mission</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+             Rerum maxime perferendis aliquid, illum quod omnis libero 
+             cupiditate numquam iure aspernatur.</p>
+          <a href="#" class="btn red waves-effect waves-pink pulse">Read More</a>
+        </div>
+        <div class="col m4 wow slideInLeft" data-wow-delay: 1s; >
+                <img src="img/pee2.jpg" class="responsive-img materialboxed" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Footer begins -->
+  <footer id="contact" class="page-footer blue darken-4">
+    <div class="container ">
+      <div class="row  ">
+        <div class="col l6 s12 contact">
+          <h3 class="white-text">Dominion City, Okota.</h3>
+          <p class="-text text-lighten-4"><i class=" fa fa-home fa-2x"></i> 148 Okota Road, Beside UBA, Opposite Macrich Gas, Cele Bustop, Okota,Lagos.</p>
+          <p class="-text text-lighten-4"><i class=" fa fa-phone fa-2x"></i> 08135462841, 09082215906</p>
+          <p class="-text text-lighten-4"><i class=" fa fa-envelope fa-2x"></i> info@stpmedia.net </p>
+        </div>
+        <div class="col l4 offset-l2 s12 contact">
+          <h5 class="white-text">Follow Us on Social media:</h5>
+          <ul>  
+            <li><a class="-text text-lighten-3 fa fa-whatsapp fa-3x li" href="#!"></a></li>
+            <li><a class="-text text-lighten-3 fa fa-instagram fa-3x in" href="#!"></a></li>
+            <li><a class="-text text-lighten-3 fa fa-twitter fa-3x tw" href="#!"></a></li>
+            <li><a class="-text text-lighten-3 fa fa-facebook fa-3x g" href="#!"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container right">
+      Beuhier © 2018 Copyright
+      <a class="-text text-lighten-4 right" href="#!">+</a>
+      </div>
+    </div>
+  </footer>
+      
+    <script src="js/jquery.min.js"></script>
+    <script src="js/project.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/filter.js"></script>
+    
+    <script>
+    new WOW().init();
+    </script>
+</body>
+</html>
